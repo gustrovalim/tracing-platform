@@ -1,0 +1,14 @@
+[project]
+name = "tracing-platform"
+version = "1.0.0.dev0"
+description = "An observability platform. Traces in, metrics out"
+requires-python = ">=3.13"
+
+[tool.uv.workspace]
+members = ["services/*", "streams/*"]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["services", "streams"]

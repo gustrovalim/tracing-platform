@@ -1,0 +1,62 @@
+{
+  "resourceSpans": [
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "manual-hello-service"
+            }
+          }
+        ]
+      },
+      "scopeSpans": [
+        {
+          "scope": {
+            "name": "my.library",
+            "version": "1.0.0",
+            "attributes": [
+              {
+                "key": "my.scope.attribute",
+                "value": {
+                  "stringValue": "some scope attribute"
+                }
+              }
+            ]
+          },
+          "spans": [
+            {
+              "traceId": "@@TRACE_ID@@",
+              "spanId": "@@SPAN_ID@@",
+              "name": "GET /manual-hello",
+              "startTimeUnixNano": "@@START_NS@@",
+              "endTimeUnixNano": "@@END_NS@@",
+              "kind": 2,
+              "attributes": [
+                {
+                  "key": "my.span.attr",
+                  "value": {
+                    "stringValue": "Manual Hello World"
+                  }
+                },
+                {
+                  "key": "body.id",
+                  "value": {
+                    "intValue": "1"
+                  }
+                },
+                {
+                  "key": "body.texto",
+                  "value": {
+                    "stringValue": "Testando meu body"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
